@@ -43,8 +43,8 @@ namespace StringArgs_Task2._1
             static void Main(string[] args)
         {
             string fileName;
-            fileName = args[0];
-            FileStream stream = new FileStream(fileName, FileMode.Open);
+            //fileName = args[0];
+            FileStream stream = new FileStream(@"C:\Users\Пользователь\Desktop\ITMO\dyatel.txt", FileMode.Open);
             StreamReader reader = new StreamReader(stream);
             int size = (int)stream.Length;
             char[] contents = new char[size];
