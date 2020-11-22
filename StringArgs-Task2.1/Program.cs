@@ -42,7 +42,7 @@ namespace StringArgs_Task2._1
 
             static void Main(string[] args)
         {
-            string fileName;
+            //string fileName;
             //fileName = args[0];
             FileStream stream = new FileStream(@"C:\Users\Пользователь\Desktop\ITMO\dyatel.txt", FileMode.Open);
             StreamReader reader = new StreamReader(stream);
@@ -58,6 +58,7 @@ namespace StringArgs_Task2._1
             }
             reader.Close();
             Summarize(contents);
+            Console.Beep();
             Console.ReadLine();
         }
     }
